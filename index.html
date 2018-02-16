@@ -5,14 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Bolt - Free Bootstrap 3 Theme">
+    <meta name="description" content="This is my portfolio site.">
+    <meta name="keyword" content="bolt, bootstrap, portfolio">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 <body>
-
-<script src="js/script.js"></script>
+<header>
+  <section class="header__position__fixed">
+    <div class="content__width clearfix">
+      <i class="fa fa-bolt fa-3x"></i>
+      <div class="header-btn__wrap">
+        <div id="button__view" onClick="toggle__view();return false" class="header__hum__menu">
+          <span class="hum__line aa hum__line-1"></span>
+          <span class="hum__line bb hum__line-2"></span>
+          <span class="hum__line cc hum__line-3"></span>
+        </div>
+        <div id="button__hidden" onClick="toggle__hidden();return false" style="display:none;" class="header__hum__menu">
+          <span class="hum__line hum__x-line-1"></span>
+          <span class="hum__line hum__x-line-2"></span>
+        </div>
+      </div>
+      <div class="header-btn__wrap btn__contact__wrap">
+        <button class="btn__contact btn__style">Contact</button>
+      </div>
+      <div id="button__area" style="display:none;" class="btn__contact__wrap__sp">
+        <button class="btn__contact__sp btn__style">Contact</button>
+      </div>
+    </div>
+  </section>
+  <section class="keyvisual">
+    <p class="bolt-theme">Bolt Theme</p>
+    <p class="keyvisual__txt">FREE BOOTSTRAP THEMES</p>
+  </section>
+</header>
+<main>
+  <section>
+    <div class="WWCD">
+      <div class="content__width text__position clearfix">
+        <img class="img__iphone" src="img/iphone.png" alt="iPhone">
+        <div class="WWCD__txt__wrap">
+          <h1>WHAT WE CAN DO?</h1>
+          <p class="WWCD__txt common__txt__style cancel__br">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the<br>1500s, when an unknown printer took a galley of type and scrambled it to<br>make a type specimen book.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="OLW text__position">
+    <div class="content__width">
+      <h2>OUR LATEST WORK</h2>
+      <figure class="gap__cancel">
+        <ul class="OLW__img__wrap cancel__margin__right gap__cancel">
+          <li><img class="OLW__img" src="img/01.jpg" alt="01"></li>
+          <li><img class="OLW__img" src="img/02.jpg" alt="02"></li>
+          <li><img class="OLW__img" src="img/03.jpg" alt="03"></li>
+        </ul>
+        <ul class="OLW__img__wrap cancel__margin__right gap__cancel">
+          <li><img class="OLW__img" src="img/04.jpg" alt="04"></li>
+          <li><img class="OLW__img" src="img/05.jpg" alt="05"></li>
+          <li><img class="OLW__img" src="img/06.jpg" alt="06"></li>
+        </ul>
+      </figure>
+      <div class="OLW__txt__wrap cancel__margin__right">
+        <p class="OLW__txt__style common__txt__style cancel__br">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.Lorem Ipsum has been the industry's standard dummy<br>text ever</p>
+        <p class="OLW__txt__style">
+          <button class="OLW__btn btn__style">Email Me!</button>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <div class="content__width text__position">
+    <h2>OUR SKILLS</h2>
+      <div class="skills__imgs__wrap cancel__margin__right">
+        <figure class="skills__imgs">
+          <img src="img/circle_01.png" alt="JavaScript">
+          <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure class="skills__imgs">
+          <img src="img/circle_02.png" alt="Bootstrap">
+          <figcaption>Bootstrap</figcaption>
+        </figure>
+        <figure class="skills__imgs">
+          <img src="img/circle_03.png" alt="WordPress">
+          <figcaption>WordPress</figcaption>
+        </figure>
+        <figure class="skills__imgs">
+          <img src="img/circle_04.png" alt="Photoshop">
+          <figcaption>Photoshop</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <section class="sns__icon__link">
+    <div class="content__width text__position">
+      <figure>
+        <ul class="sns__icon__wrap gap__cancel">
+          <li><i class="fa fa-facebook fa-3x sns__icon"></i></li>
+          <li><i class="fa fa-dribbble fa-3x sns__icon"></i></li>
+          <li><i class="fa fa-twitter fa-3x sns__icon"></i></li>
+          <li><i class="fa fa-envelope fa-3x sns__icon"></i></li>
+        </ul>
+      </figure>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="content__width">
+    <p>Crafted with <i class="fa fa-heart" aria-hidden="true"></i> by BlackTie.co.</p>
+  </div>
+</footer>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
