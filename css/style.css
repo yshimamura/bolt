@@ -25,8 +25,22 @@ body {
   font-size: 0;
 }
 
-.header__position__fixed {
+.cursor {
+  cursor: pointer;
+}
+
+h1,h2,h3 {
+  font-family: Raleway;
+}
+
+p,button,figcaption {
+  font-family: Lato;
+  font-weight: lighter;
+}
+
+header {
   position: fixed;
+  top: 0;
   width: 100%;
   height: auto;
   padding: 15px 0;
@@ -41,7 +55,6 @@ body {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .hum__line {
@@ -52,15 +65,15 @@ body {
 }
 
 .hum__line-1 {
-  transform:translateY(0px);
+  transform: translateY(0px);
 }
 
 .hum__line-2 {
-  transform:translateY(5px);
+  transform: translateY(5px);
 }
 
 .hum__line-3 {
-  transform:translateY(10px);
+  transform: translateY(10px);
 }
 
 .hum__x-line-1 {
@@ -88,7 +101,6 @@ body {
   border: none;
   color: white;
   background-color: #74cfae;
-  cursor: pointer;
   outline: 0;
 }
 
@@ -97,8 +109,7 @@ body {
 }
 
 .keyvisual {
-  position: relative;
-  top: 78px;
+  margin-top: 78px;
   padding: 250px 0;
 }
 
@@ -122,11 +133,16 @@ body {
 }
 
 .img__iphone {
-  margin-left: 100px;
+  float: left;
+  width: 40%;
   vertical-align: bottom;
 }
 
-h1 {
+.iphone {
+  vertical-align: bottom;
+}
+
+h2 {
   font-size: 24px;
   text-align: center;
   color: #fff;
@@ -134,7 +150,7 @@ h1 {
 
 .WWCD__txt__wrap {
   float: right;
-  padding: 0 15px;
+  width: 60%;
 }
 
 .WWCD__txt {
@@ -144,30 +160,40 @@ h1 {
 
 .common__txt__style {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 35px;
 }
 
 .OLW {
-  padding: 60px 0 70px 0;
+  padding: 60px 0 70px;
   color: #c0c0c0;
 }
 
-h2 {
+h3 {
   margin-bottom: 40px;
   font-size: 24px;
 }
 
 .OLW__img__wrap {
-  margin-bottom: 80px;
+  display: inline-block;
 }
 
 .OLW__img__wrap > li {
   display: inline-block;
   margin-right: 100px;
+  opacity: 0.7;
+}
+
+.OLW__img__wrap > li:hover {
+  opacity: 1;
+}
+
+.OLW__img__wrap > li:nth-child(3) {
+  margin: 0 0 80px 0;
 }
 
 .OLW__img {
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 .cancel__margin__right > :last-of-type {
@@ -175,7 +201,7 @@ h2 {
 }
 
 .OLW__txt__wrap {
-  margin-top: 10px;
+  margin-top: 90px;
 }
 
 .OLW__txt__style {
@@ -190,7 +216,7 @@ h2 {
 }
 
 .skills {
-  padding: 70px 0 100px 0;
+  padding: 70px 0 100px;
   background-color: #4e4e4e;
   color: white;
 }
@@ -218,7 +244,6 @@ h2 {
 
 .sns__icon__wrap > li:hover {
   background-color: white;
-  cursor: pointer;
 }
 
 .sns__icon {
@@ -226,7 +251,7 @@ h2 {
 }
 
 .footer {
-  padding: 20px 0 25px 0;
+  padding: 20px 0 25px;
   background-color: #74cfae;
   text-align: right;
   color: white;
@@ -240,22 +265,24 @@ h2 {
   }
 
   .WWCD {
-    padding: 50px 0 25px 0;
+    padding: 50px 0 25px;
     background-color: #74cfae;
   }
 
   .img__iphone {
     vertical-align: bottom;
     margin: 0 0 20px 0;
+    float: none;
+    width: 100%;
   }
 
   .WWCD__txt__wrap {
-    padding: 0 15px;
+    width: 100%;
     float: none;
   }
 
   .OLW__txt__wrap {
-    margin-top: 0;
+    margin-top: 80px;
   }
 
   .OLW__img__wrap > li {
@@ -300,12 +327,27 @@ h2 {
     display: block;
   }
 
+  .x-menu {
+    display: none;
+  }
+
   .btn__contact__wrap {
     display: none;
   }
 
-  .btn__contact__wrap__sp {
+  .btn__contact__wrap__sp.is-active {
     display: block;
+  }
+
+  .header__hum__menu.is-active {
+    display: block;
+  }
+
+  .header__hum__menu.is-hidden {
+    display: none;
+  }
+
+  .btn__contact__wrap__sp {
     position: absolute;
     top: 79px;
     left: 0;
@@ -320,9 +362,7 @@ h2 {
   }
 
   .keyvisual {
-    position: relative;
-    top: 78px;
-    padding: 160px 0 130px 0;
+    padding: 160px 0 130px;
   }
 
   .bolt-theme {
@@ -333,18 +373,19 @@ h2 {
   }
 
   .WWCD {
-    padding: 50px 0 25px 0;
+    padding: 50px 0 25px;
     background-color: #74cfae;
   }
 
   .img__iphone {
     vertical-align: bottom;
     margin: 0 0 20px 0;
+    width: 100%;
   }
 
   .WWCD__txt__wrap {
-    padding: 0 15px;
     float: none;
+    width: 100%;
   }
 
   .OLW__txt__wrap {
@@ -359,7 +400,11 @@ h2 {
   .OLW__txt__style {
     display: block;
     vertical-align: top;
-    margin: 0 0 40px 0;
+    margin: 80px 0 40px;
+  }
+
+  .OLW__btn__wrap {
+    margin: 40px 0 0 0;
   }
 
   .cancel__br > br {

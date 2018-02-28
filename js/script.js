@@ -1,13 +1,15 @@
-var elem_1 = document.getElementById("button__area");
-var elem_2 = document.getElementById("button__view");
-var elem_3 = document.getElementById("button__hidden");
-function toggle__view() {
-  elem_1.style.display = "";
-  elem_2.style.display = "none";
-  elem_3.style.display = "";
-}
-function toggle__hidden() {
-  elem_1.style.display = "none";
-  elem_2.style.display = "";
-  elem_3.style.display = "none";
-}
+var view = document.getElementById('button__view');
+var btn = document.getElementById('button__area');
+var hidden = document.getElementById('button__hidden');
+
+view.addEventListener('click', function() {
+  btn.classList.add('is-active');
+  hidden.classList.add('is-active');
+  this.classList.add('is-hidden');
+});
+
+hidden.addEventListener('click', function() {
+  btn.classList.remove('is-active');
+  view.classList.remove('is-hidden');
+  this.classList.remove('is-active');
+});

@@ -17,40 +17,42 @@
 </head>
 <body>
 <header>
-  <section class="header__position__fixed">
-    <div class="content__width clearfix">
-      <i class="fa fa-bolt fa-3x"></i>
-      <div class="header-btn__wrap">
-        <div id="button__view" onClick="toggle__view();return false" class="header__hum__menu">
-          <span class="hum__line aa hum__line-1"></span>
-          <span class="hum__line bb hum__line-2"></span>
-          <span class="hum__line cc hum__line-3"></span>
-        </div>
-        <div id="button__hidden" onClick="toggle__hidden();return false" style="display:none;" class="header__hum__menu">
-          <span class="hum__line hum__x-line-1"></span>
-          <span class="hum__line hum__x-line-2"></span>
-        </div>
+  <div class="content__width clearfix">
+    <i class="fa fa-bolt fa-3x"></i>
+    <div class="header-btn__wrap">
+      <div id="button__view" class="header__hum__menu cursor">
+        <span class="hum__line hum__line-1"></span>
+        <span class="hum__line hum__line-2"></span>
+        <span class="hum__line hum__line-3"></span>
       </div>
-      <div class="header-btn__wrap btn__contact__wrap">
-        <button class="btn__contact btn__style">Contact</button>
-      </div>
-      <div id="button__area" style="display:none;" class="btn__contact__wrap__sp">
-        <button class="btn__contact__sp btn__style">Contact</button>
+      <div id="button__hidden" class="header__hum__menu x-menu cursor">
+        <span class="hum__line hum__x-line-1"></span>
+        <span class="hum__line hum__x-line-2"></span>
       </div>
     </div>
-  </section>
-  <section class="keyvisual">
-    <p class="bolt-theme">Bolt Theme</p>
-    <p class="keyvisual__txt">FREE BOOTSTRAP THEMES</p>
-  </section>
+    <div class="header-btn__wrap btn__contact__wrap">
+      <button class="btn__contact btn__style cursor">Contact</button>
+    </div>
+    <div id="button__area" class="btn__contact__wrap__sp">
+      <button class="btn__contact__sp btn__style cursor">Contact</button>
+    </div>
+  </div>
 </header>
 <main>
+  <section class="keyvisual">
+    <h1>
+      <div class="bolt-theme">Bolt Theme</div>
+      <div class="keyvisual__txt">FREE BOOTSTRAP THEMES</div>
+    </h1>
+  </section>
   <section>
     <div class="WWCD">
       <div class="content__width text__position clearfix">
-        <img class="img__iphone" src="img/iphone.png" alt="iPhone">
+        <figure class="img__iphone">
+          <img class="iphone" src="img/iphone.png" alt="iPhone">
+        </figure>
         <div class="WWCD__txt__wrap">
-          <h1>WHAT WE CAN DO?</h1>
+          <h2>WHAT WE CAN DO?</h2>
           <p class="WWCD__txt common__txt__style cancel__br">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry's standard dummy text ever since the<br>1500s, when an unknown printer took a galley of type and scrambled it to<br>make a type specimen book.</p>
         </div>
       </div>
@@ -58,30 +60,28 @@
   </section>
   <section class="OLW text__position">
     <div class="content__width">
-      <h2>OUR LATEST WORK</h2>
+      <h3>OUR LATEST WORK</h3>
       <figure class="gap__cancel">
         <ul class="OLW__img__wrap cancel__margin__right gap__cancel">
           <li><img class="OLW__img" src="img/01.jpg" alt="01"></li>
           <li><img class="OLW__img" src="img/02.jpg" alt="02"></li>
           <li><img class="OLW__img" src="img/03.jpg" alt="03"></li>
-        </ul>
-        <ul class="OLW__img__wrap cancel__margin__right gap__cancel">
           <li><img class="OLW__img" src="img/04.jpg" alt="04"></li>
           <li><img class="OLW__img" src="img/05.jpg" alt="05"></li>
           <li><img class="OLW__img" src="img/06.jpg" alt="06"></li>
         </ul>
       </figure>
       <div class="OLW__txt__wrap cancel__margin__right">
-        <p class="OLW__txt__style common__txt__style cancel__br">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.Lorem Ipsum has been the industry's standard dummy<br>text ever</p>
-        <p class="OLW__txt__style">
-          <button class="OLW__btn btn__style">Email Me!</button>
+        <p class="OLW__txt__style common__txt__style cancel__br">Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry.Lorem Ipsum has been the industry's standard dummy<br>text ever.</p>
+        <p class="OLW__txt__style OLW__btn__wrap">
+          <button class="OLW__btn btn__style cursor">Email Me!</button>
         </p>
       </div>
     </div>
   </section>
   <section class="skills">
     <div class="content__width text__position">
-    <h2>OUR SKILLS</h2>
+      <h3>OUR SKILLS</h3>
       <div class="skills__imgs__wrap cancel__margin__right">
         <figure class="skills__imgs">
           <img src="img/circle_01.png" alt="JavaScript">
@@ -105,7 +105,7 @@
   <section class="sns__icon__link">
     <div class="content__width text__position">
       <figure>
-        <ul class="sns__icon__wrap gap__cancel">
+        <ul class="sns__icon__wrap gap__cancel cursor">
           <li><i class="fa fa-facebook fa-3x sns__icon"></i></li>
           <li><i class="fa fa-dribbble fa-3x sns__icon"></i></li>
           <li><i class="fa fa-twitter fa-3x sns__icon"></i></li>
